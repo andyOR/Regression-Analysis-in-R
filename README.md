@@ -5,3 +5,4 @@
 ### This chapter included introduction to RStudio (IDE), R basics, vectors, matrices, data structures,conditional statements, loop statements, function. 
 
 ## Chapter 2. Statistical Data Analysis 
+### This chapter included basics of plotting graphs in R, altering the size of plot margins, plotting character, color, type, labels on axis, title fot the graph, hostograms, scatter plots, boxplot, and quantile functions.  
