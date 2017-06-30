@@ -1,30 +1,55 @@
 a <- 2
 a
-a * 5 # We can do calculation with a
-a <- a + 10 # Assign a new value to a
-rm(list = ls()) #To remove all variables from R's memory
-foodexp <- c(145, 214, 100, 300) #concatenate (paste together) elements
+
+# We can do calculation with a
+a * 5 
+
+# Assign a new value to a
+a <- a + 10
+
+#To remove all variables from R's memory
+rm(list = ls())
+
+#concatenate (paste together) elements
+foodexp <- c(145, 214, 100, 300) 
 income <- c(5000, 7000, 4901, 8503)
 exp_food <- foodexp/income
 exp_food
+
+# Adding strings
 factor <- c("low", "mid", "high")
 factor
+
+# sequential list
 veca = seq(from = 0, to = 1, by = 0.25)
 veca
 vecb = seq(-1, 1, 0.5)
-length(vecb) # how many elements of vec2
+
+# how many elements of vec2
+length(vecb)
 veca + vecb
 sum(veca)
 mean(veca)
 quantile(veca)
-mat <- matrix(data = c(1, 2, 3, 4, 5, 6), ncol = 3)# matrix form
+
+## matrix form
+mat <- matrix(data = c(1, 2, 3, 4, 5, 6), ncol = 3)
 mat
-mat[1, ]# firs row and all columns
+
+# first row and all columns
+mat[1, ]
 mat[2, 3]
 sum(mat)
-colSums(mat)# col sum
-rowSums(mat)# row sum
-ncol(mat)# number of columns
+
+# col sum
+colSums(mat)
+
+# row sum
+rowSums(mat)
+
+# number of columns
+ncol(mat)
+
 ## conditional statements
 w <- 10
 if (w > 100) {
