@@ -34,4 +34,26 @@ qqline(y, col = "red", lwd = 2) # Addding theoretical line
 par(mfrow = c(1,1))
 
 
-##
+## Multiple Plots
+
+par(mfrow = c(2, 2))
+hist(x, main = "Histogram")
+boxplot(x, main = "Boxplot", xlab = "x")
+plot(density(x), type = "l", main = "Density", xlab = "x")
+qqnorm(x)
+
+## Overlapping histograms
+
+hist(a, xlim = c(5, 18), ylim = c(0, 30), breaks = 10, col = rgb(1, 1, 0, 0.7), main = "",
+     xlab = "number")
+par(new = TRUE)
+hist(b, xlim = c(5, 18), ylim = c(0, 30), breaks = 10, col = rgb(0, 1, 1, 0.4), main = "",
+     xlab = "", ylab = "")
+
+
+## Displaying higher dimensional data
+
+pairs(iris)
+
+## END
+
