@@ -13,7 +13,7 @@ lines(density(x), lwd = 2, col = "blue") # Kernel Density Estimation
 ## Aesthetics 
 hist(x, breaks = 10, freq = F, col = "gray", main = "Histogram and density estimate",
      xlab = "weight")
-
+par(mfrow = c(1,1))
 
 ## Box Plot
 
