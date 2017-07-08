@@ -18,4 +18,5 @@
 #### a. Residual plots
 #### b. Leverage Points
 #### c. Outliers
-#### d. 
+#### d. R-squared
+#### 

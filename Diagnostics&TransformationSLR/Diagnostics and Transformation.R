@@ -53,3 +53,67 @@ abline(h = 4/6, lty = 2, col = 2)
 ## Dealing with Bad Leverage points
 # Remove invalid data points and refit the model without them
 # Fit a different regression model- Higher-order terms, Transformation
+
+
+## R-squared
+# R-squared (coefficient of determination) is a measure of how close the data are to the fitted regression line.
+# R-squared = SSreg/ SST : Explained variation/Total variation
+
+set.seed(456)
+n = 1000
+x = rnorm(n)
+y1 <- 1 + 2 * x + rnorm(n)
+y2 <- 1 + 2 * x + rnorm(n, 0, 3)
+par(mfrow = c(1, 2))
+plot(x, y1)
+abline(lsfit(x, y1))
+plot(x, y2)
+abline(lsfit(x, y2))
+
+## Summary statitics - Rsquared for plot 1
+summary(lm(y1 ~ x))
+
+# Call:
+#   lm(formula = y1 ~ x)
+# 
+# Residuals:
+#   Min       1Q   Median       3Q      Max 
+# -2.87917 -0.66129 -0.03604  0.69126  2.94421 
+# 
+# Coefficients:
+#   Estimate Std. Error t value Pr(>|t|)    
+# (Intercept)  1.06259    0.03181   33.41   <2e-16 ***
+#   x            2.00506    0.03239   61.90   <2e-16 ***
+#   ---
+#   Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+# 
+# Residual standard error: 1.004 on 998 degrees of freedom
+# Multiple R-squared:  0.7934,	Adjusted R-squared:  0.7931 
+# F-statistic:  3831 on 1 and 998 DF,  p-value: < 2.2e-16
+
+
+## Summary statistics - Rsquared for plot 2
+summary(lm(y2 ~ x))
+
+# Call:
+#   lm(formula = y2 ~ x)
+# 
+# Residuals:
+#   Min       1Q   Median       3Q      Max 
+# -10.1712  -1.9696   0.1058   1.9246  11.5658 
+# 
+# Coefficients:
+#   Estimate Std. Error t value Pr(>|t|)    
+# (Intercept)  0.88035    0.09161   9.609   <2e-16 ***
+#   x            2.04892    0.09330  21.961   <2e-16 ***
+#   ---
+#   Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+# 
+# Residual standard error: 2.892 on 998 degrees of freedom
+# Multiple R-squared:  0.3258,	Adjusted R-squared:  0.3251 
+# F-statistic: 482.3 on 1 and 998 DF,  p-value: < 2.2e-16
+
+## R=sqaured does not indicate whether a regression model is adequate. You can have a low value R-squared for a good model, or a high value R-squared for a model that does not fit the data
+## Use F-test for relationship
+
+
