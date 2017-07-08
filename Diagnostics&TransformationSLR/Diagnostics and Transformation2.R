@@ -88,3 +88,28 @@ StanRes2 <- rstandard(m2)
 plot(CouponRate[-c(4, 13, 35)], StanRes2, xlab = "Coupon Rate (%)", ylab = "Standardized Residuals", xlim = c(2, 14), main = "Regular Bonds")
 abline(h = 2, lty = 2, col = 'red')
 abline(h = -2, lty = 2, col = 'red')
+
+# Handling outliers and leverage points
+# Points should not be routinely deleted from an analysis just because they do not fit
+# the model. Outliers and bad leverage points are signals, flagging potential
+# problems with the model. 
+# Outliers often point out an important feature of the problem not considered
+# before. They may point to an alternative model in which the points are not an
+# outlier. In this case it is then worth considering fitting an alternative model
+
+
+# Assessing the influence of certain cases
+# one or more points can strongly control or influence the least squares fit of a
+# regression model.
+# Influence can be thought of as the product of leverage and outlierness
+
+# Cook's Distance : a summary statistic that measures the influence of a single case on theleast squares fit of a regression line
+# Large Di's indicate influential observations. Rough cut-off for SLR is 4/(n-2)
+cd1 <- cooks.distance(m1)
+plot(CouponRate, cd1, ylab = "Cook's Distance", main = 'Inluential Points on Cook\'s D')
+text(CouponRate, cd1, labels = Case, cex = 0.6, pos = 3)
+abline(h = 4/(35 - 2), lty = 2, col = 'red')
+
+# Note: Di's only detects influence of single observation; Influential pairs may go
+# undetected.
+# Cook's D can be "fooled" by multiple outliers.

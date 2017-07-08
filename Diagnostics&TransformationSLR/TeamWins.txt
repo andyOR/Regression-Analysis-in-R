@@ -1,0 +1,15 @@
+   Team Batting Winning
+1 Baltimore 0.266 0.574
+2 Boston 0.269 0.661
+3 California 0.256 0.508
+4 Chicago 0.246 0.410
+5 Cleveland 0.271 0.500
+6 Detroit 0.259 0.467
+7 Kansas City 0.250 0.508
+8 Milwaukee 0.271 0.525
+9 Minnesota 0.274 0.403
+10 New York 0.268 0.587
+11 Oakland 0.252 0.422
+12 Seattle 0.246 0.391
+13 Texas 0.263 0.548
+14 Toronto 0.270 0.500
