@@ -10,3 +10,5 @@
 ## Chapter 3. Simple Regression Analysis
 ### This chapter introduced concept of simple regression analysis and its uses. Regression analysis is the most widely used statistical tool for understanding relationships among variables. Prediction and forecasting can be performed using regression analysis. 
 ### Regression models conditional distribution of Y given X=x, i.e., P(Y=y|X=x). Given a specific value of X (i.e., X=x), we can predict the value of Y. Simple linear regression models relationship between two variables, X as explanatory variable (or Predictor) and Y as response (or Dependent) variable. Linear relationships  are easy to work with and are a good approximation in lots of real word problems.
+
+## Chapter 4. Diagnostics and Transformations for Simple Linear Regressions
