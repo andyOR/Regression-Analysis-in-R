@@ -20,4 +20,4 @@
 #### b. Leverage Points
 #### c. Outliers
 #### d. R-squared
-#### 
+#### e. Standardized residuals
