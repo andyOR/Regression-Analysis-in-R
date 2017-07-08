@@ -12,4 +12,4 @@
 ### Regression models conditional distribution of Y given X=x, i.e., P(Y=y|X=x). Given a specific value of X (i.e., X=x), we can predict the value of Y. Simple linear regression models relationship between two variables, X as explanatory variable (or Predictor) and Y as response (or Dependent) variable. Linear relationships  are easy to work with and are a good approximation in lots of real word problems.
 
 ## Chapter 4. Diagnostics and Transformations for Simple Linear Regressions
-### This chapter introduces the analysis of regression models for accuracy and shortcomings. Regression functional form can be ineffective if some explanatory variables are missing, presence of non-linear terms and outliers, faulty residual assumptions, etc. 
+### This chapter introduces the analysis of regression models for accuracy and shortcomings. Regression functional form can be invalid if some explanatory variables are missing, presence of non-linear terms and outliers, faulty residual assumptions, etc. 

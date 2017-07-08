@@ -35,3 +35,21 @@ plot(anscombe$x3, m3$residuals, ylab = "Residuals", xlim = c(4, 20), ylim = c(-3
 m4 <- lm(y4 ~ x4, data = anscombe)
 plot(anscombe$x4, m4$residuals, ylab = "Residuals", xlim = c(4, 20), ylim = c(-3.5,
                                                                               3.5), main = "Data Set 4")
+
+## Leverage Points: Leverage points are those which have great influence on the fitted model, i.e., whose x-value is distant from the other x-values
+# A popular rule to classify Xias a point of high leverage YJ in a SLR model if h > 4/n
+huber <- read.table("huber.txt", header = TRUE)
+mBad <- lm(YBad ~ x, data = huber)
+mGood <- lm(YGood ~ x, data = huber)
+par(mfrow = c(1, 2))
+plot(hatvalues(mBad), main = "Hat Values for YBad")
+abline(h = 4/6, lty = 2, col = 2)
+plot(hatvalues(mGood), main = "Hat Values for YGood")
+abline(h = 4/6, lty = 2, col = 2)
+
+# A bad leverage point is a leverage point which is also an outlier.
+# A point is a bad leverage point if its -value does not follow the pattern set by the other data points
+
+## Dealing with Bad Leverage points
+# Remove invalid data points and refit the model without them
+# Fit a different regression model- Higher-order terms, Transformation
