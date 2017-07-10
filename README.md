@@ -21,3 +21,6 @@
 #### c. Outliers
 #### d. R-squared
 #### e. Standardized residuals
+#### f. Cook's Distance
+#### g. Diagnostics Plots for Regression model
+#### h. Transformation
