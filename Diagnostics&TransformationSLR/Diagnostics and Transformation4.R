@@ -69,7 +69,7 @@ summary(m1)
 
 # Call:
 #   lm(formula = log(Sales) ~ log(Price))
-# 
+
 # Residuals:
 #   Min       1Q   Median       3Q      Max 
 # -0.88973 -0.18188  0.04025  0.22087  1.31026 
