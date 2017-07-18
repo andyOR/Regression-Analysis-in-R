@@ -24,3 +24,6 @@
 #### f. Cook's Distance
 #### g. Diagnostics Plots for Regression model
 #### h. Transformation
+
+## Chapter 5. Multilinear Regression
+### This chapter introduced concept of Multilinear regression analysis and its advantages. Multiple linear regression is an extension of simple linear regression. It is used to describe scenarios of product demand models with demand variable depending on competitors' prices, advertising, demographics, etc or Multi-factor asset pricing models, Fama-French three-factor model, many variables used to describe the returns of a portfolio or stock.
