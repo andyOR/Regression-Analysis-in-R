@@ -13,7 +13,7 @@
 ### Regression models conditional distribution of Y given X=x, i.e., P(Y=y|X=x). Given a specific value of X (i.e., X=x), we can predict the value of Y. Simple linear regression models relationship between two variables, X as explanatory variable (or Predictor) and Y as response (or Dependent) variable. Linear relationships  are easy to work with and are a good approximation in lots of real word problems.
 
 ## Chapter 4. Diagnostics and Transformations for Simple Linear Regressions
-### This chapter introduces the analysis of regression models for accuracy and shortcomings. Regression functional form can be invalid if some explanatory variables are missing, presence of non-linear terms and outliers, faulty residual assumptions, etc.
+### This chapter introduces the analysis of simple linear regression models for accuracy and shortcomings. Regression functional form can be invalid if some explanatory variables are missing, presence of non-linear terms and outliers, faulty residual assumptions, etc.
 
 ### This chapter includes:
 #### a. Residual plots
@@ -30,7 +30,17 @@
 
 
 ### This chapter includes:
-#### a. 
+#### a. F-test
+#### b. Anova
+#### c. Ancova 
 
 ## Chapter 6. Diagnostics and Transformation for MLR
-### 
+### This chapter introduces the analysis of fiited Multilinear regression model. The model can be assessed for the effects of one or more predictors on the model, outliers, leverage points, transformation of predictor or response variable or both if invalid model has been fit, etc. 
+
+### This chapter includes:
+#### a. Added variable plots
+#### b. Transformation of predictor variable
+#### c. Transformation of response variable
+#### d. Inverse response plots
+#### e. Boxcox Procedure
+#### f. Pairs plot
